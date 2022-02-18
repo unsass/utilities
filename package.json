@@ -1,0 +1,36 @@
+{
+    "name": "@unsass/utilities",
+    "description": "Sass utilities.",
+    "version": "0.0.0",
+    "scripts": {
+        "prepare": "husky install",
+        "release": "semantic-release --branches main"
+    },
+    "engines": {
+        "node": ">=14.0.0",
+        "npm": ">=8.0.0"
+    },
+    "dependencies": {
+        "@commitlint/cli": "^16.2.1",
+        "@commitlint/config-conventional": "^16.2.1",
+        "@semantic-release/changelog": "^6.0.1",
+        "@semantic-release/git": "^10.0.1",
+        "husky": "^7.0.4",
+        "semantic-release": "^19.0.2"
+    },
+    "keywords": [
+        "utilities",
+        "unsass",
+        "sass",
+        "css"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/unsass/utilities",
+    "bugs": {
+        "url": "https://github.com/unsass/utilities/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/unsass/utilities.git"
+    }
+}
