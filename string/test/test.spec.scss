@@ -1,0 +1,41 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "sass:string";
+@use "../index" as u-string;
+
+@include describe("string.replace()") {
+    @include it("Should return css declaration.") {
+        @include assert {
+            @include output {
+                .foo {
+                    content: "#{u-string.replace(test, e)}";
+                }
+            }
+
+            @include expect {
+                .foo {
+                    content: "tst";
+                }
+            }
+        }
+    }
+
+    @include it("Should return css declaration with new replacement.") {
+        @include assert {
+            @include output {
+                .foo {
+                    content: "#{u-string.replace(tst, s, n)}";
+                }
+            }
+
+            @include expect {
+                .foo {
+                    content: "tnt";
+                }
+            }
+        }
+    }
+}
