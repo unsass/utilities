@@ -24,6 +24,7 @@
         }
     }
 }
+
 @include describe("utilities.font-smoothing()") {
     @include it("Should return font smoothing declaration.") {
         @include assert {
