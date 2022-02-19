@@ -1,0 +1,44 @@
+// ============================================================================================= //
+//                                             TEST                                              //
+// ============================================================================================= //
+
+@use "true" as *;
+@use "../index" as utilities;
+
+@include describe("utilities.ellipsis()") {
+    @include it("Should return ellipsis declaration.") {
+        @include assert {
+            @include output {
+                .foo {
+                   @include utilities.ellipsis;
+                }
+            }
+
+            @include expect {
+                .foo {
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+@include describe("utilities.font-smoothing()") {
+    @include it("Should return font smoothing declaration.") {
+        @include assert {
+            @include output {
+                .foo {
+                    @include utilities.font-smoothing;
+                }
+            }
+
+            @include expect {
+                .foo {
+                    -moz-osx-font-smoothing: grayscale;
+                    -webkit-font-smoothing: antialiased;
+                }
+            }
+        }
+    }
+}
