@@ -5,12 +5,34 @@
 @use "true" as *;
 @use "../index" as utilities;
 
+@include describe("utilities.disabled-touch-screen()") {
+    @include it("Should return disabled touch screen declaration.") {
+        @include assert {
+            @include output {
+                .foo {
+                    @include utilities.disabled-touch-screen {
+                        color: darkcyan;
+                    }
+                }
+            }
+
+            @include expect {
+                @media (pointer: fine) {
+                    .foo {
+                        color: darkcyan;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @include describe("utilities.disabled-pointer-events()") {
     @include it("Should return disabled pointer events declaration.") {
         @include assert {
             @include output {
                 .foo {
-                   @include utilities.disabled-pointer-events;
+                    @include utilities.disabled-pointer-events;
                 }
             }
 
@@ -29,7 +51,7 @@
         @include assert {
             @include output {
                 .foo {
-                   @include utilities.ellipsis;
+                    @include utilities.ellipsis;
                 }
             }
 

@@ -3,6 +3,15 @@
 // ============================================================================================= //
 
 ///
+/// Disabled touch screen.
+///
+@mixin disabled-touch-screen {
+    @media (pointer: fine) {
+        @content;
+    }
+}
+
+///
 /// Disabled pointer events.
 ///
 @mixin disabled-pointer-events {

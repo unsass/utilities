@@ -21,9 +21,34 @@ npm install @unsass/utilities
 
 | Mixin                     | Description                                   |
 |---------------------------|-----------------------------------------------|
+| `disabled-touch-screen`   | Sets the disabled touch screen declaration.   |
 | `disabled-pointer-events` | Sets the disabled pointer events declaration. |
 | `ellipsis`                | Sets the ellipsis declaration.                |
 | `font-smoothing`          | Sets the font smoothing declaration.          |
+
+#### Disabled touch screen with `utilities.disabled-touch-screen()`
+
+The following Sass...
+
+```scss
+@use "@unsass/utilities";
+
+.foo {
+    @include utilities.disabled-touch-screen {
+        color: darkcyan;
+    }
+}
+```
+
+...will produce the following CSS...
+
+```css
+@media (pointer: fine) {
+    .foo {
+        color: darkcyan;
+    }
+}
+```
 
 #### Disabled pointer events with `utilities.disabled-pointer-events()`
 
