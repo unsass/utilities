@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.0](https://github.com/unsass/utilities/compare/v1.0.0...v1.1.0) (2022-02-20)
+
+
+### Features
+
+* **strip-unit:** add function ([86d63da](https://github.com/unsass/utilities/commit/86d63da33b9f253de8cc49e48fd5cc247c13564b))
+
 ## 1.0.0 (2022-02-19)
 
 
