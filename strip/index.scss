@@ -2,6 +2,4 @@
 //                                             INDEX                                             //
 // ============================================================================================= //
 
-@forward "./mixins";
-@forward "./string/functions" as string-*;
-@forward "./strip/functions" as strip-*;
+@forward "./functions";

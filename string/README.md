@@ -12,22 +12,17 @@ The utilities for manage string.
 
 ### Sass functions
 
-| Mixin     | Description              |
-|-----------|--------------------------|
-| `replace` | Sets string replacement. |
+| Function  | Description                           |
+|-----------|---------------------------------------|
+| `replace` | Return value with replacement option. |
 
 #### Replace string with `string.replace()`
 
-The following Sass...
+The following Sass will produce:
 
 ```scss
 @use "@unsass/utilities/string";
 
 $key: "#{string.replace(test, e)}";
-```
-
-...will produce the following CSS...
-
-```scss
-$key: "tst";
+// tst
 ```

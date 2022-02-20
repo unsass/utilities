@@ -67,8 +67,17 @@ The following Sass...
 }
 ```
 
+### Sass functions
+
+| Function                                     | Description                           |
+|----------------------------------------------|---------------------------------------|
+| `string-replace($string, $search, $replace)` | Return value without the unit.        |
+| `strip-unit($value)`                         | Return value with replacement option. |
+
+
 ## Components
 
 | Component            | Description                     | Sass `@use` prefix   |
 |----------------------|---------------------------------|----------------------|
 | [`string`](./string) | Utilities functions for string. | `utilities.string-*` |
+| [`strip`](./strip)   | Utilities functions for strip.  | `utilities.strip-*`  |
