@@ -1,5 +1,14 @@
 # Utilities
 
+[![Version](https://flat.badgen.net/npm/v/@unsass/utilities)](https://www.npmjs.com/package/@unsass/utilities)
+[![Download](https://flat.badgen.net/npm/dt/@unsass/utilities)](https://www.npmjs.com/package/@unsass/utilities)
+
+## Install
+
+```shell
+npm install @unsass/utilities
+```
+
 ## Usage
 
 ```scss
@@ -57,3 +66,9 @@ The following Sass...
     overflow: hidden;
 }
 ```
+
+## Components
+
+| Component            | Description                     | Sass `@use` prefix   |
+|----------------------|---------------------------------|----------------------|
+| [`string`](./string) | Utilities functions for string. | `utilities.string-*` |
