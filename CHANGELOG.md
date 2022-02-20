@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.0](https://github.com/unsass/utilities/compare/v1.1.0...v1.2.0) (2022-02-20)
+
+
+### Features
+
+* add `disabled-pointer-events` mixin ([797c4b3](https://github.com/unsass/utilities/commit/797c4b32a6aca710fe69892d39b4d8df45ef9d37))
+* add `disabled-touch-screen` mixin ([2808d4a](https://github.com/unsass/utilities/commit/2808d4a6774c84048a2a8ba107a3f36a55e57f82))
+
 ## [1.1.0](https://github.com/unsass/utilities/compare/v1.0.0...v1.1.0) (2022-02-20)
 
 
