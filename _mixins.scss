@@ -3,6 +3,14 @@
 // ============================================================================================= //
 
 ///
+/// Disabled pointer events.
+///
+@mixin disabled-pointer-events {
+    cursor: default;
+    pointer-events: none;
+}
+
+///
 /// Ellipsis.
 ///
 @mixin ellipsis {

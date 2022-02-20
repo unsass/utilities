@@ -5,6 +5,25 @@
 @use "true" as *;
 @use "../index" as utilities;
 
+@include describe("utilities.disabled-pointer-events()") {
+    @include it("Should return disabled pointer events declaration.") {
+        @include assert {
+            @include output {
+                .foo {
+                   @include utilities.disabled-pointer-events;
+                }
+            }
+
+            @include expect {
+                .foo {
+                    cursor: default;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}
+
 @include describe("utilities.ellipsis()") {
     @include it("Should return ellipsis declaration.") {
         @include assert {

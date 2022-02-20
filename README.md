@@ -19,10 +19,32 @@ npm install @unsass/utilities
 
 ### Sass mixins
 
-| Mixin            | Description                    |
-|------------------|--------------------------------|
-| `ellipsis`       | Sets the ellipsis rules.       |
-| `font-smoothing` | Sets the font smoothing rules. |
+| Mixin                     | Description                                   |
+|---------------------------|-----------------------------------------------|
+| `disabled-pointer-events` | Sets the disabled pointer events declaration. |
+| `ellipsis`                | Sets the ellipsis declaration.                |
+| `font-smoothing`          | Sets the font smoothing declaration.          |
+
+#### Disabled pointer events with `utilities.disabled-pointer-events()`
+
+The following Sass...
+
+```scss
+@use "@unsass/utilities";
+
+.foo {
+    @include utilities.disabled-pointer-events;
+}
+```
+
+...will produce the following CSS...
+
+```css
+.foo {
+    cursor: default;
+    pointer-events: none;
+}
+```
 
 #### Ellipsis rule with `utilities.ellipsis()`
 
