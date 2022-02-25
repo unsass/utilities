@@ -87,12 +87,13 @@ The following Sass...
 
 ```css
 .foo {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 ```
 
-#### Ellipsis rule with `utilities.font-smoothing()`
+#### Font smoothing rule with `utilities.font-smoothing()`
 
 The following Sass...
 
@@ -108,9 +109,8 @@ The following Sass...
 
 ```css
 .foo {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 ```
 
