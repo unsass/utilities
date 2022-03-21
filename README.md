@@ -19,12 +19,13 @@ npm install @unsass/utilities
 
 ### Sass mixins
 
-| Mixin                     | Description                                   |
-|---------------------------|-----------------------------------------------|
-| `disabled-touch-screen`   | Sets the disabled touch screen declaration.   |
-| `disabled-pointer-events` | Sets the disabled pointer events declaration. |
-| `ellipsis`                | Sets the ellipsis declaration.                |
-| `font-smoothing`          | Sets the font smoothing declaration.          |
+| Mixin                                | Description                                   |
+|--------------------------------------|-----------------------------------------------|
+| `disabled-touch-screen`              | Sets the disabled touch screen declaration.   |
+| `disabled-pointer-events`            | Sets the disabled pointer events declaration. |
+| `ellipsis`                           | Sets the ellipsis declaration.                |
+| `ellipsis-multiline($line, $orient)` | Sets the ellipsis multiline declaration.      |
+| `font-smoothing`                     | Sets the font smoothing declaration.          |
 
 #### Disabled touch screen with `utilities.disabled-touch-screen()`
 
@@ -89,6 +90,29 @@ The following Sass...
 .foo {
     text-overflow: ellipsis;
     white-space: nowrap;
+    overflow: hidden;
+}
+```
+
+#### Ellipsis multiline rule with `utilities.ellipsis-multiline()`
+
+The following Sass...
+
+```scss
+@use "@unsass/utilities";
+
+.foo {
+    @include utilities.ellipsis-multiline;
+}
+```
+
+...will produce the following CSS...
+
+```css
+.foo {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
     overflow: hidden;
 }
 ```
