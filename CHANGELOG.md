@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.0](https://github.com/unsass/utilities/compare/v1.2.0...v1.3.0) (2022-03-21)
+
+
+### Features
+
+* add `ellipsis-multiline` mixin ([c870c25](https://github.com/unsass/utilities/commit/c870c257b80419f7f24c8084c4f991b9bca9fd53))
+
 ## [1.2.0](https://github.com/unsass/utilities/compare/v1.1.0...v1.2.0) (2022-02-20)
 
 
