@@ -10,8 +10,6 @@
     @include it("Should return value without unit.") {
         @include assert {
             @include output {
-                @debug utilities.strip-unit(10px);
-
                 .foo {
                     content: "#{utilities.strip-unit(10px)}";
                 }
