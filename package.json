@@ -1,7 +1,7 @@
 {
     "name": "@unsass/utilities",
     "version": "1.3.0",
-    "description": "Sass utilities.",
+    "description": "Sass mixins and functions utilities for made your development more easier.",
     "scripts": {
         "lint:css": "stylelint --fix \"**/*.scss\"",
         "lint": "npm-run-all --parallel lint:*",
@@ -37,6 +37,7 @@
         "font-smoothing",
         "pointer-events",
         "touch-screen",
+        "replace",
         "unsass",
         "css"
     ],

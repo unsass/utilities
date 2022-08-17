@@ -3,6 +3,8 @@
 [![Version](https://flat.badgen.net/npm/v/@unsass/utilities)](https://www.npmjs.com/package/@unsass/utilities)
 [![Download](https://flat.badgen.net/npm/dt/@unsass/utilities)](https://www.npmjs.com/package/@unsass/utilities)
 
+Sass mixins and functions utilities for made your development more easier.
+
 ## Install
 
 ```shell
