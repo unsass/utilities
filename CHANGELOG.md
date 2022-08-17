@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.1](https://github.com/unsass/utilities/compare/v1.3.0...v1.3.1) (2022-08-17)
+
+
+### Bug Fixes
+
+* packages vulnerabilities ([c2d0456](https://github.com/unsass/utilities/commit/c2d0456b1f286cde4044924b601afae391670fdf))
+* remove unneeded `[@debug](https://github.com/debug)` ([fdb0955](https://github.com/unsass/utilities/commit/fdb0955fa6f2827097ab38e6b74e0cb2cf7551e4))
+
 ## [1.3.0](https://github.com/unsass/utilities/compare/v1.2.0...v1.3.0) (2022-03-21)
 
 
